@@ -1,0 +1,18 @@
+<%=flash[:notice]%>
+<%= form_with model: @user, url: "/login1" do |form| %>
+  <div>
+    <%= form.label :username %><br>
+    <%= form.text_field :username %>
+   </div>
+
+  <div>
+    <%= form.label :password %><br>
+    <%= form.text_field :password %>
+  </div>
+
+
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
